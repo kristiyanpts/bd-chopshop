@@ -42,11 +42,6 @@ Config.JobData = {
     Ped = "a_f_o_soucent_02",
     Coords = vector4(-1180.40, -915.34, 6.54, 31.60),
     ChopDownCoords = vector3(471.5797, -1312.1295, 30.2579 - 1),
-
-    MaxJobsAtOnce = 2, -- Recommended to leave at 1 as it is a massive server event
-
-    -- 60 minutes after starting the heist if its not completed it will finish and another group can start it
-    JobTime = 20, -- In minutes, the time people have to complete the job
 }
 
 Config.WheelItems = { -- Items you get when chopping a wheel
