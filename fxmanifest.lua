@@ -28,5 +28,8 @@ server_scripts {
 }
 
 escrow_ignore {
+  'shared/**/*.lua',
+  'client/**/*.lua',
+  'server/**/*.lua',
   'config.lua',
 }
