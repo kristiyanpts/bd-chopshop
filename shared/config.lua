@@ -17,13 +17,13 @@ Config["Core"] = {
     /**
         Supported Inventories:
             * ox_inventory - https://github.com/overextended/ox_inventory
-            * qb-inventory - It will open a context menu with the GPUs instead of an inventory - https://github.com/overextended/ox_lib
+            * qb-inventory - Default qb-inventory
             * codem-inventory - https://forum.cfx.re/t/codem-minventory-advanced-inventory-system/5167702
             * custom - You can configure it yourself to work with any other inventory. If you need help, open a ticket in our discord.
     **/
-    Inventory = "codem-inventory",
+    Inventory = "ox_inventory",
 
-    Target = "qb",       -- 'qb', 'ox' or 'custom' | You can edit in client/client.utils.lua
+    Target = "ox",       -- 'qb', 'ox' or 'custom' | You can edit in client/client.utils.lua
     ProgressBar = "qb",  -- 'ox' or 'qb' or 'custom' | You can edit in client/client.utils.lua
     Fuel = "cdn-fuel",   -- 'cdn-fuel' or 'LegacyFuel' or 'custom' | You can edit in client/client.utils.lua
     VehicleKeys = "qb",  -- 'qb' or 'custom' | You can edit in client/client.utils.lua
