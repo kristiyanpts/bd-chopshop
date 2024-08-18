@@ -18,18 +18,19 @@ Config["Core"] = {
         Supported Inventories:
             * ox_inventory - https://github.com/overextended/ox_inventory
             * qb-inventory - It will open a context menu with the GPUs instead of an inventory - https://github.com/overextended/ox_lib
+            * codem-inventory - https://forum.cfx.re/t/codem-minventory-advanced-inventory-system/5167702
             * custom - You can configure it yourself to work with any other inventory. If you need help, open a ticket in our discord.
     **/
-    Inventory = "ox_inventory",
+    Inventory = "codem-inventory",
 
-    Target = "ox",       -- 'qb', 'ox' or 'custom' | You can edit in client/client.utils.lua
+    Target = "qb",       -- 'qb', 'ox' or 'custom' | You can edit in client/client.utils.lua
     ProgressBar = "qb",  -- 'ox' or 'qb' or 'custom' | You can edit in client/client.utils.lua
     Fuel = "cdn-fuel",   -- 'cdn-fuel' or 'LegacyFuel' or 'custom' | You can edit in client/client.utils.lua
     VehicleKeys = "qb",  -- 'qb' or 'custom' | You can edit in client/client.utils.lua
     GroupsSystem = "bd", -- 'bd' or 'custom' | You can edit in server/editable/groups/groups.lua
 }
 
-Config.CoolDown = 20       -- How long people must wait before starting another job (in minutes)
+Config.CoolDown = 10      -- How long people must wait before starting another job (in minutes)
 
 Config.EnableDog = true    -- For testing purposes only inache da e true hehe
 
