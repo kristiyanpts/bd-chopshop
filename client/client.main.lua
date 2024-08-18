@@ -534,6 +534,8 @@ function OpenChopShop()
         exports.ox_inventory:openInventory('shop', { type = 'chop-shop' })
     elseif Config.Core.Inventory == "qb-inventory" then
         TriggerServerEvent("bd-chopshop:server:open-chop-shop")
+    elseif Config.Core.Inventory == "codem-inventory" then
+        TriggerServerEvent("bd-chopshop:server:open-chop-shop")    
     elseif Config.Core.Inventory == "custom" then
         -- Add your custom inventory here
     else

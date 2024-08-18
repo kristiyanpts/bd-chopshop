@@ -33,3 +33,10 @@ escrow_ignore {
   'server/**/*.lua',
   'config.lua',
 }
+
+dependencies {
+    'ox_lib',
+    'bd-minigames',
+    'bd-scanner',
+    'bd-jobstatus',
+}
