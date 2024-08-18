@@ -319,6 +319,16 @@ CreateThread(function()
 			slots = #items,
 			items = items
 		})
+	elseif Config.Core.Inventory == "codem-inventory" then
+		shopname = 'chop-shop',
+		RegisterNetEvent('codem-inventory:openshop', function(shopname)
+			if Config.Shops[shopname] then
+				OpenInventoryShop(shopname, Config.Shops[shopname])
+			else
+				print('not found shop')
+			end
+		end)
+			
 	elseif Config.Core.Inventory == "custom" then
 		-- Add your own inventory system here
 	else
