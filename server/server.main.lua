@@ -320,19 +320,11 @@ CreateThread(function()
 			items = items
 		})
 	elseif Config.Core.Inventory == "codem-inventory" then
-		shopname = 'chop-shop',
-		RegisterNetEvent('codem-inventory:openshop', function(shopname)
-			if Config.Shops[shopname] then
-				OpenInventoryShop(shopname, Config.Shops[shopname])
-			else
-				print('not found shop')
-			end
-		end)
-			
+		shopname = 'chop-shop'
 	elseif Config.Core.Inventory == "custom" then
 		-- Add your own inventory system here
 	else
-		debugPrint("Inventory system not supported. Supported inventory systems: ox_inventory, qb-inventory, custom")
+		debugPrint("Inventory system not supported. Supported inventory systems: ox_inventory, qb-inventory, codem-inventory and custom")
 	end
 end)
 
@@ -342,6 +334,13 @@ end)
 
 RegisterNetEvent("bd-chopshop:server:open-chop-shop", function()
 	exports['qb-inventory']:OpenShop(source, 'chop-shop')
+end)
+RegisterNetEvent("codem-inventory:openshop", function(shopname)
+    if Config.Shops[shopname] then
+        OpenInventoryShop(shopname, Config.Shops[shopname])
+    else
+        print('not found shop')
+    end
 end)
 
 RegisterNetEvent("bd-chopshop:server:sync-wheel", function(tier, offset)
