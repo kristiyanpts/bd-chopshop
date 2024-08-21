@@ -72,5 +72,17 @@
 ## shared/weapons.lua
 
 ```lua
-	[`weapon_digiscanner`] = {['name'] = 'weapon_digiscanner', 		['label'] = 'Digital Scanner', 			['weapontype'] = 'Melee',	['ammotype'] = nil,	['damagereason'] = 'Melee killed / Whacked / Executed / Beat down / Murdered / Battered', ['image'] = "WEAPON_DIGISCANNER.png" },
+	weapon_digiscanner = {name = 'weapon_digiscanner', label= 'Digital Scanner', weight = 100, type = 'weapon', ammotype = nil, image = "WEAPON_DIGISCANNER.png", unique = true, useable = false, description = 'signal scanner'},
+```
+
+## For Codem-Inventory
+Do the above steps first then the below steps
+
+## codem-inventory/config/itemlist.lua
+```lua
+carpart_wheel = { name = 'carpart_wheel', label = 'Wheel', weight = 10000, type = 'item', image = 'carpart_wheel.png', unique = true, useable = false, shouldClose = false, description = 'Wheel from a car' },
+carpart_door = { name = 'carpart_door', label = 'Door', weight = 10000, type = 'item', image = 'carpart_door.png', unique = true, useable = false, shouldClose = false, description = 'Door from a car' },
+carpart_hood = { name = 'carpart_hood', label = 'Hood', weight = 10000, type = 'item', image = 'carpart_hood.png', unique = true, useable = false, shouldClose = false, description = 'Hood from a car' },
+carpart_trunk = { name = 'carpart_trunk', label = 'Trunk', weight = 10000, type = 'item', image = 'carpart_trunk.png', unique = true, useable = false, shouldClose = false, description = 'Trunk from a car' },
+weapon_digiscanner = {name = 'weapon_digiscanner', label= 'Digital Scanner', weight = 100, type = 'weapon', ammotype = nil, image = "WEAPON_DIGISCANNER.png", unique = true, useable = false, description = 'signal scanner'},
 ```
