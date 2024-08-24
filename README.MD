@@ -37,4 +37,4 @@ You can find the installation guide and everything about the script [here](https
 **[Side Hustles Job Bundle](https://store.bulgar.dev/package/6385396)**
 
 # Contributors
-** 1. Codem Inventory support thanks to Procastinator Hub - https://discord.gg/6fWcYXEgHY**
+**1. Codem Inventory support thanks to Procastinator Hub - https://discord.gg/6fWcYXEgHY**
