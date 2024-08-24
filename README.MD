@@ -34,4 +34,6 @@ You can find the installation guide and everything about the script [here](https
 
 **[Tattoo Shop + Clothing Store](https://store.bulgar.dev/package/6347469)**
 
+# Contributors
+## 1. Codem Inventory support thanks to Procastinator Hub - https://discord.gg/6fWcYXEgHY
 **[Side Hustles Job Bundle](https://store.bulgar.dev/package/6385396)**
