@@ -535,7 +535,7 @@ function OpenChopShop()
     elseif Config.Core.Inventory == "qb-inventory" then
         TriggerServerEvent("bd-chopshop:server:open-chop-shop")
     elseif Config.Core.Inventory == "codem-inventory" then
-        TriggerServerEvent("bd-chopshop:server:open-chop-shop")    
+        TriggerEvent("codem-inventory:openshop", "chopshop")     
     elseif Config.Core.Inventory == "custom" then
         -- Add your custom inventory here
     else
